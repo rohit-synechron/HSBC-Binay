@@ -1,0 +1,204 @@
+<div class="container" ng-controller="stepTwoController">
+
+    <div class="row margin-bottom-30">
+        <div class="col-md-7 col-sm-6 mobile-spacing position-relative mobile-spacing">
+            <div class="circle position-relative">
+                <div class="circle__inner">
+                    <div class="circle__wrapper">
+                        <div class="for-you-ribbon-disk"></div>
+
+                            <div class="circle__content premier-account-card">
+                                <div class="accounts-title">{{accountInfo[currAccount-1].Title}}</div>
+
+                                <div class="accounts-amount">{{accountInfo[currAccount-1].CircleTitleOne}}</div>
+                                <div class="accounts-subtitle">{{accountInfo[currAccount-1].CircleTitleOneDescription}}</div>
+
+                                <div class="hidden-xs">
+                                    <div class="accounts-amount">{{accountInfo[currAccount-1].CircleTitleTwo}}</div>
+                                    <div class="accounts-subtitle">{{accountInfo[currAccount-1].CircleTitleTwoDescription}}</div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remove (-) buttton and card image -->
+            <div id="remove-credit-card" class="upload-box text-center margin-top-30 choice-made" ng-show="cardImg">
+                <div class="position-relative">
+                    <img class="img-responsive" ng-src="{{initialCardImage}}">
+                    <div id="remove-credit-card-button" ng-show="removeBtn" ng-click="onRemoveCardClick(true)">-</div>
+                </div>
+
+                <div class="chosen-card"> your chosen Credit card above</div>
+            </div>
+
+            <!-- Card image area -->
+            <a id="add-credit-card" data-target="#myModal-accounts-creditcards" role="button" data-toggle="modal" class="upload-box text-center margin-top-30"  ng-show="blankImg">
+                <img class="img-responsive" id="premier-card" ng-src="{{currCardImage}}" ng-show="selectedcard">
+                <div id="remove-upload" ng-show="plusBtn">
+                    <div class="red-upload"><img src="images/plus-sign-red-big.png" class="img-responsive center-block"></div>
+                    Add a credit card to this account?
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Choose Card Pop Up Styling -->
+        <div id="myModal-accounts-creditcards" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="col-sm-12">
+                        <h2 class="sub-heading margin-bottom-30"> Please select an option to continue </h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row margin-bottom-40 acc">
+                            <div class="col-md-4"  ng-repeat="card in addCard">
+                                <a class="white-box" id="premier-card-choose" ng-href="#" ng-click='onCardOptionClick(card)' data-dismiss="modal"
+                                   aria-hidden="true">
+                                    <div class="white-box-image"><img ng-src="{{card.ImageUrl}}"
+                                                                      class="img-responsive center-block">
+                                    </div>
+                                    <div class="white-box-title">{{card.Title}}</div>
+                                    <div class="white-box-description">{{card.Summary| limitTo: 125}}...
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="white-box-button text-center">
+                                            Add Card
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side text  Accordian  -->
+        <div class=" col-md-5 col-sm-6">
+            <div class="padding-left-20">
+
+                <div class="title-style-one">At a glance</div>
+                <div class="small-divider"></div>
+                <div class="description-text margin-bottom-20">
+                    {{accountInfo[currAccount-1].Summary}}
+                </div>
+
+                <div class="accordian-title">{{accordianTitle}}</div>
+                <div id="accorStep2">
+                    <uib-accordion close-others="true">
+                      <uib-accordion-group is-open="tab.state" ng-repeat="tab in Tabs">
+                        <uib-accordion-heading>
+                          {{tab.header}}
+                        </uib-accordion-heading>
+                          {{tab.content}}
+                      </uib-accordion-group>    
+                    </uib-accordion>    
+                </div>                           
+
+                <!-- Main CTA -->                
+                <a role="button" class="red-button with-background" ng-click="gotoAccountThirdStep()"> Apply Now </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center page link  -->
+    <div class="row margin-top-60">
+        <div class="col-sm-12">
+            <a href="{{accountInfo[currAccount-1].WebsiteURL}}" target="_blank" class="learn-more-show more-block">Benefits of {{accountInfo[currAccount-1].Title}}</a>
+        </div>
+    </div>
+
+    <!-- Bottom page options   -->
+    <div class="row margin-top-30" ng-show="hvRelatedAcc">
+        <div class="col-md-12">
+            <div class="white-box-intro-title">
+                Here are some more options
+            </div>
+        </div>
+    </div>
+    <div class="row row-same-height" ng-show="hvRelatedAcc">
+        <div class="col-sm-6 mobile-spacing tablet-spacing col-same-height" ng-repeat="account in relatedCard" ng-click="onRelatedCardClick(account)">
+
+            <a class="white-box text-center position-relative" href="" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="position-relative">
+                            <div class="small-circle position-relative ">
+                                <div class="small-circle__inner">
+                                    <div class="small-circle__wrapper">
+                                        <div class="small-circle__content">
+                                            <div class="white-box-title">{{accountInfo[account-1].Title}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div style="background-image: url({{account.ImageUrl}})" class="small-circle-account-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-6">
+
+                        <div class="clearfix">
+                            <div class="col-xs-6 remove-padding text-left">
+                                <div class="accounts-amount">AED {{accountInfo[account-1].MonthlySalary|currency:"":0}}</div>
+                                <div class="accounts-subtitle">Min Monthly Income</div>
+                            </div>
+                            <div class="col-xs-6 remove-padding text-left">
+                                <div class="accounts-amount color-grey">AED {{accountInfo[account-1].MinimumAnnualIncome|currency:"":0}}</div>
+                                <div class="accounts-subtitle">Avg monthly balance</div>
+                            </div>
+                        </div>
+
+                        <div class="white-box-description text-left margin-top-10">{{accountInfo[account-1].Summary| limitTo: 130}}{{account.Summary.length > 130 ? '...' : ''}}...</div>
+                        <div class="text-left">
+                            <div class="white-box-button">
+                                More Info
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="red-overlay" ng-show="hoverEdit">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <div class="red-overlay-title">  Minimum annual income requirement:</div>
+                                <div class="red-overlay-subtitle"> AED {{accountInfo[account-1].MinimumAnnualIncome|currency:"":0}} per annum </div>
+
+
+                                <div class="red-overlay-title"> Minimum age for primary cardholder</div>
+                                <div class="red-overlay-subtitle">{{accountInfo[account-1].MinimumAgePrimary}} Years Old</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="red-overlay-title"> Minimum age for supplementary cardholder</div>
+                                <div class="red-overlay-subtitle">{{accountInfo[account-1].MinimumAgeSupplementary}} Years Old</div>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center">
+                            <div class="white-box-button ">
+                                More Info
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>       
+
+    <div class="visible-xs margin-top-30">
+        <div class="row">
+            <div class="col-xs-12">
+                <img src="lib/images/pagination.png" class="center-block">
+            </div>
+        </div>
+    </div>
+</div>

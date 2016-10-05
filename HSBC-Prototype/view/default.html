@@ -1,0 +1,79 @@
+<div class="container" ng-controller="defaultController">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="main-heading">
+                Making banking straight forward
+            </h1>
+        </div>
+    </div>
+
+    <div class="step-wrapper">
+        <!-- Step 1 -->
+        <div class="step-1" ng-show="show1">
+            <div class="row margin-bottom-20">
+                <div class="col-md-12">
+                    <h2 class="sub-heading"> I would like to apply for</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-1 hidden-xs"></div>
+                <div class="col-md-2 col-sm-3 col-xs-6 text-center mobile-spacing"> <a class="circle-style animated bounceIn account-choice animated-block" ng-click="showSecondStep('account')">
+                    <div class=" circle-button center-block icon-account"></div>
+                    <div class="circle-link"> Account </div>
+                </a> </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 text-center mobile-spacing"> <a class="circle-style animated bounceIn creditcard-choice animated-block" ng-click="showSecondStep('credit')">
+                    <div class="circle-button center-block icon-credit-card"></div>
+                    <div class="circle-link">Credit Card </div>
+                </a> </div>
+                <div class="col-md-2 col-sm-3 col-xs-12 center-block text-center mobile-spacing position-relative"> <a class="circle-style loan-overlay animated bounceIn animated-block">
+                    <div class="circle-button center-block icon-loan"></div>
+                    <div class="circle-link"> Loan</div>
+                </a>
+                    <div class="loan-overlay-show">
+                        <!-- <img src="images/loan-overlay.png" class="img-responsive">-->
+
+                        <div class="small-circle-button car-loan animated animated1 zoomIn"><a href="#"></a></div>
+                        <div class="small-circle-button home-loan animated animated2 zoomIn "><a href="#"></a></div>
+                        <div class="small-circle-button personal-loan animated animated3 zoomIn"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-1 hidden-xs"></div>
+            </div>
+        </div>
+        <!-- Step 1 -->
+
+        <!-- Step 2 -->
+        <div class="step-2" ng-show="show2">
+            <div class="row margin-bottom-20">
+                <div class="col-md-12">
+                    <h2 class="sub-heading"> &nbsp;</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-1 hidden-xs"></div>
+                <div class="col-md-2 col-sm-3 col-xs-6 text-center mobile-spacing" ng-click="gotoStepOne('new')" >
+                    <a class="account-1 animated bounceIn animated-block circle-style" href="#">
+                    <div class="circle-button center-block icon-customer"></div>
+                    <div class="circle-link"> New <br>
+                        to HSBC</div>
+                </a> </div>
+                <div class="col-md-2 col-sm-3 col-xs-6  text-center mobile-spacing" ng-click="gotoStepOne('exiting')">
+                    <a class="account-1 animated bounceIn animated-block circle-style circle-style-1" href="#">
+                    <div class="circle-button center-block icon-hsbc"></div>
+                    <div class="circle-link"> Existing HSBC <br>
+                        UAE Customer</div>
+                </a> </div>
+                <div class="col-md-2 col-sm-3 col-xs-12  center-block text-center mobile-spacing position-relative" ng-click="gotoStepOne('global')">
+                    <a class="account-1 animated bounceIn animated-block circle-style circle-style-1 " href="#">
+                    <div class="circle-button center-block icon-hsbc"></div>
+                    <div class="circle-link"> Global HSBC <br>
+                        Premier Customer</div>
+                </a> </div>
+                <div class="col-md-3 col-sm-1 hidden-xs"></div>
+            </div>
+        </div>
+        <!-- Step 2 -->
+    </div>
+
+</div>

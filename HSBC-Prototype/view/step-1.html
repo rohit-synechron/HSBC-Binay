@@ -1,0 +1,152 @@
+<div class="container" ng-controller="stepOneController">
+
+    <div class="row margin-bottom-20">
+        <div class="col-sm-12">
+            <h1 class="main-heading">
+                Let's find the Account you are eligible for
+
+            </h1>
+        </div>
+    </div>
+
+    <form>
+        <div class="row margin-bottom-30">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3 col-md-4">
+                <div class="form-question mobile-spacing margin-top-10">
+                    What is the nature of your Employment?
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4 special-background">
+                <button class="radio-sal-3 active-button" ng-click="onEmpNatureClick(true)">
+                    Salaried
+                </button>
+                <button class="radio-self-3" ng-click="onEmpNatureClick(false)">
+                    Self Employed
+                </button>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div ng-show="salariedForm">            
+            <div class="row margin-bottom-30">
+                <div class="col-sm-2 hidden-xs"></div>
+                 <div class="col-sm-4 mobile-spacing clearfix">
+                    <input type="number" name="name" ng-model="mySal" class="border-input tooltip-added" placeholder="Monthly Income (AED)" required>
+                    <div class="custom-tooltip">
+                        <div class="tooltip-box">This amount will be based on your salary income only</div>
+                    </div>
+                </div> 
+                
+                <div class="col-sm-4 text-center">
+                    <div class="tooltip-added"> 
+                        <div id="averageDropdown" bs-dropdown 
+                             bs-dropdown-display="MyBalance" 
+                             bs-dropdown-items="balance" 
+                             ng-model="selectBalance" 
+                             ng-change="GetMonthlyBalValue()">
+                         </div>
+                    </div>                
+
+                    <div class="custom-tooltip">
+                        <div class="tooltip-box">This amount will be based on your salary income only</div>
+                    </div>
+                </div>            
+                <div class="col-sm-2 hidden-xs"></div>
+            </div>
+
+            <div class="row margin-bottom-30">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <div bs-dropdown 
+                             bs-dropdown-display="MyResStatus" 
+                             bs-dropdown-items="resStatus" 
+                             ng-model="selectResStatus" 
+                             ng-change="GetResStatusValue()">
+                         </div>             
+                </div>            
+                <div class="col-sm-4">             
+                    <div bs-dropdown 
+                             bs-dropdown-display="MyAccType" 
+                             bs-dropdown-items="accType" 
+                             ng-model="selectAccType" 
+                             ng-change="GetAccTypeValue()">
+                         </div>            
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+
+            <div class="row margin-bottom-30">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5 col-md-6">
+                    <div class="form-question mobile-spacing">
+                        Some of our Accounts and Credit cards require salary transfer. Will you transfer your salary to HSBC?
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-2 special-background">
+                    <a class="radio-yes-3 active-button">
+                        yes
+                    </a>
+                    <a class="radio-no-3">
+                        no
+                    </a>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+
+        <div ng-show="selfEmpForm">            
+            <div class="row margin-bottom-30">
+                <div class="col-sm-2 hidden-xs"></div>
+                 
+                <div class="col-sm-4 text-center">
+                    <div class="tooltip-added"> 
+                        <div id="averageDropdown" bs-dropdown 
+                             bs-dropdown-display="MyBalance" 
+                             bs-dropdown-items="balance" 
+                             ng-model="selectBalance" 
+                             ng-change="GetMonthlyBalValue()">
+                         </div>
+                    </div>                
+
+                    <div class="custom-tooltip">
+                        <div class="tooltip-box">This amount will be based on your salary income only</div>
+                    </div>
+                </div>  
+                <div class="col-sm-4">
+                    <div bs-dropdown 
+                             bs-dropdown-display="MyResStatus" 
+                             bs-dropdown-items="resStatus" 
+                             ng-model="selectResStatus" 
+                             ng-change="GetResStatusValue()">
+                         </div>             
+                </div>           
+                <div class="col-sm-2 hidden-xs"></div>
+            </div>
+
+            <div class="row margin-bottom-30">
+                <div class="col-sm-2"></div>
+                           
+                <div class="col-sm-4">             
+                    <div bs-dropdown 
+                             bs-dropdown-display="MyAccType" 
+                             bs-dropdown-items="accType" 
+                             ng-model="selectAccType" 
+                             ng-change="GetAccTypeValue()">
+                         </div>            
+                </div>
+                <div class="col-sm-2"></div>
+            </div>           
+        </div>
+
+
+        <div class="row ">
+            <div class="col-sm-12 text-center">
+                <button  class="red-button disabled with-background" id="step1Account" ng-disabled="checkAllFilled() == 0" ng-click="gotoAccountsStepTwo()"> Find Account</button>
+                <!-- <a class="red-button with-background"> Choose the right account <span class="hidden-xs" >for me  </a>     -->
+            </div>
+        </div>
+    </form>    
+
+</div>

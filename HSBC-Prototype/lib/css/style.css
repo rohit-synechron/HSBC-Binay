@@ -1,0 +1,187 @@
+#averageDropdown .dropdown button{
+	width: 90%;
+}
+
+.dropdown button{
+	background-color: transparent !important;
+	text-transform:none;
+	color: #999;
+	font-size:16px;
+	font-weight:bold;
+	border:none;
+	width: 100%;
+	border-bottom: 2px solid #000;
+	padding-bottom: 17px;
+    padding-top: 2px;
+	text-align: left;
+	background-image: url("../images/dropdown-arrows.png");
+	background-repeat: no-repeat;
+	background-position: 95% 10%;
+}
+
+
+.btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {	background-image: url("../images/dropdown-arrows.png");
+}
+
+
+.btn:active, .btn.active{
+	box-shadow: none;
+}
+.btn-default:hover{
+	outline:0;
+	background-color: #eee;
+	border-color: #000;
+}
+
+#averageDropdown .open .dropdown-menu{
+	width:90%;
+}
+
+.open .dropdown-menu{
+	border: none;
+	border-radius: 0px;
+	width:100%;
+	text-align:center;
+	top: 39px;
+	border-top: 4px solid #DB0011;
+}
+
+.open .dropdown-menu li{
+	border-bottom: 2px solid #eee;
+    color: #545f63;
+    font-size: 15px;
+    margin: 0;
+    /*padding: 20px 10px;*/
+}
+
+.dropdown-menu>li>a{
+	padding: 20px 0px;
+	font-weight:bold;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #f3f4f6;
+    color: #e33e41;
+}
+
+.dropdown-menu>li>a:focus{
+	outline: 0;
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open>.dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open>.dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open>.dropdown-toggle.btn-default.focus{
+	background-color: #eee;
+    color: #545f63;
+    outline:0;
+}
+
+.caret{
+	margin-left: 17%;
+	color: #000;
+	display: none;
+}
+
+.stepThree .dropdown-menu{
+	height: 136px;
+	overflow-y: auto;
+	min-width: 20px;
+}
+.stepThree select{
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	height: 41px;
+	border: none;
+	width: 100%;
+	border-bottom:2px solid black !important;
+	background-color: transparent;
+	border-radius: 0 !important;
+}
+.stepThree select:focus{
+	outline: none;
+	border-bottom:2px solid red !important;
+}
+.stepThree select option{
+	padding:35px 0;
+	border:1px solid black;
+}
+.stepThree .dropdown .dropdown-toggle{
+	text-align: left;
+	background-color: #fff;
+}
+.stepThree .dropdown .dropdown-toggle:hover,.dropdown .dropdown-toggle:focus,.dropdown.open .dropdown-toggle:focus{
+	background-color: #fff;
+}
+.status-button{
+	position: relative;
+}
+.btnspan{
+	display: inline-block;
+	height:41px;
+	background: #008580;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.innerSpan{
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+.panel-title a[aria-expanded="true"] {
+	background-color: #db0011;
+	color: #FFF;
+	background-image: url("../images/edit-sign.png");
+	background-repeat: no-repeat;
+	background-position: 96.5% center;
+}
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0;
+	border: none;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.small-upload-box {
+	background-color: #f5f5f5;
+	border: 1px dashed #444;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../images/small-upload-box-icon.png);
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.credit-card-details-info{
+	display: block !important;
+}
+#remove-upload{
+    border: 2px dashed #ddd;
+    padding: 38px;
+    background-color: #fff;
+}
+.disabledTrue{
+	pointer-events: none;
+	opacity:0.5;
+}
+.disabledbtn{
+	pointer-events: none;
+	opacity:0.7;
+}
+
+/* over-writing Date-picker */
+input::-webkit-calendar-picker-indicator{opacity: 0 !important;}
+input[type="date" i]::-webkit-inner-spin-button, input[type="datetime" i]::-webkit-inner-spin-button, input[type="datetime-local" i]::-webkit-inner-spin-button, input[type="month" i]::-webkit-inner-spin-button, input[type="time" i]::-webkit-inner-spin-button, input[type="week" i]::-webkit-inner-spin-button{opacity: 0 !important;}
+input::-webkit-clear-button {opacity: 0 !important;}
+input::-webkit-inner-spin-button{opacity: 0 !important;}

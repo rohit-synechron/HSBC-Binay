@@ -1,0 +1,583 @@
+<div class="container stepThree" ng-controller="stepThreeController">
+    <div class="click-to-call-box animated fadeIn hide text-center" id="callbuttonScreen">
+        <div class="click-call-title">
+            <span>Need help?</span>
+        </div>
+        <a href="tel:800-4722" class=" click-call-number">
+            800 4722
+        </a>
+
+        <div ng-show="isRefGenerated">
+            <div class="click-call-subtitle">
+                your application reference number
+            </div>
+            <a href="tel:800-4722" class="click-call-link">
+                {{refNumber}}
+            </a>
+        </div>
+
+
+
+        <div class="click-call-small">
+            Our opening hours are 9am - 10pm
+            <br> please call us at anytime.
+        </div>
+    </div>
+    <div class="call-button" ng-click="onCallButtonClick()">
+    </div>
+    <div class="row">
+        <div class="col-md-8 ">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="main-greeting">Hello {{firstname}} {{lastname}}<span class="start-text"></span> <span class="start-text-last"></span></h2>
+                        <p class="gray-text">
+                            Let’s get started with your documents. You can upload your documents online or choose to give them to our sales executive later.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-group" id="accordion-3" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default visible-xs visible-sm">
+                                <div class="panel-heading" role="tab" id="headingMobile">
+                                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseMobile"
+                                    aria-expanded="false" aria-controls="collapseMobile"> SBC Premier Current Account </a> </h4>
+                                </div>
+                                <div id="collapseMobile" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingMobile">
+                                    <div class="panel-body">
+                                        <div class="sidebar-card">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-xs-12">
+                                                    <div class="circle position-relative">
+                                                        <div class="circle__inner">
+                                                            <div class="circle__wrapper">
+                                                                <div class="circle__content">
+                                                                    <div class="accounts-title">HSBC Premier Current Account</div>
+                                                                    <div class="accounts-subtitle">Minimum Monthly Income</div>
+                                                                    <div class="accounts-amount"> <span>aed </span> 50,000</div>
+                                                                    <div class="hidden-md hidden-sm hidden-xs">
+                                                                        <div class="accounts-or">or</div>
+                                                                        <div class="accounts-subtitle">Minimum Balance</div>
+                                                                        <div class="accounts-amount"> <span>aed </span> 150,000</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6  col-xs-12">
+                                                    <div class="position-relative">
+                                                        <div class="card-example"></div>
+                                                        <div class="card-example-last">{{firstname}} {{lastname}}</div>
+                                                    </div>
+                                                    <div class="title-style-one">At a glance</div>
+                                                    <div class="small-divider"></div>
+                                                    <div class="description-text margin-bottom-20"> Designed to provide you with experiences that you'll cherish for the rest of your life. From travel to culinary experiences, culture and shopping there's no limit to where the benefits can take you </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tell Us A Bit Start -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-3"
+                                        href="step-3.html#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Tell us a bit about yourself
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse panelData in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <form name="formOne">
+
+
+                                            <div ng-repeat="data in PanelOne" class="form-spacing row">
+                                                <cust-dir ng-repeat="d in data" datatype={{d.DataType}} datavalue={{d.DataValues}} class="{{d.Alignment}}" dataholder="{{d.Placeholder}}"></cust-dir>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center margin-bottom-20">
+                                                    <!-- The more complete each section is the more this will be completed -->
+                                                    <a href="" class="status-button disabledbtn" style="background-position: -150px 0px;">
+                                                        <span class="btnspan"></span>
+                                                        <span class="innerSpan">Continue</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tell Us A Bit End -->
+                            <!-- Personal Information -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                    <a class="collapsed disabledTrue" role="button" data-toggle="collapse"
+                                        data-parent="#accordion-3"
+                                        href="step-3.html#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Personal Information
+                                    </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse panelData" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <!--<div class="row">-->
+                                        <!--<div class="col-sm-12">-->
+                                        <form name="formTwo">
+                                            <div class="row margin-bottom-20">
+                                                <div class="col-md-12">
+                                                    <div class="form-subheading remove-margin-top"><span>Save time</span>
+                                                    </div>
+                                                    <div class="form-question"> Autofill the form below by simply taking a photo or by uploading your documents </div>
+                                                </div>
+                                            </div>
+                                            <div class="row margin-bottom-40">
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-4 col-xs-6">
+                                                    <a href="#" class="circle-style text-center">
+                                                        <div class="circle-button center-block icon-picture"></div>
+                                                        <div class="circle-link"> Take a photo</div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-xs-6">
+                                                    <a href="step-3.html#upload-docs" data-toggle="modal" class="circle-style text-center">
+                                                        <div class="circle-button center-block icon-upload"></div>
+                                                        <div class="circle-link"> Upload doc</div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                                <!--<div class="col-md-4 col-xs-12">-->
+                                                <!--<a href="#" class="circle-style text-center">-->
+                                                <!--<div class="circle-button center-block icon-swipe"></div>-->
+                                                <!--<div class="circle-link"> Swipe your card</div>-->
+                                                <!--</a>-->
+                                                <!--</div>-->
+                                            </div>
+                                            <div ng-repeat="data in PanelTwo" class="form-spacing row">
+                                                <cust-dir ng-repeat="d in data" datatype={{d.DataType}} datavalue={{d.DataValues}} class="{{d.Alignment}}" dataholder="{{d.Placeholder}}"></cust-dir>
+                                            </div>
+                                            <!-- Upload Docs -->
+                                            <div id="upload-docs" class="modal fade">
+                                                <div class="modal-dialog save-popup">
+                                                    <div class="modal-content">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                        <div class="col-sm-12">
+                                                            <h2 class="sub-heading margin-bottom-30"> Upload YOur Documents  </h2>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col-md-5">
+                                                                    <div class="small-upload-box-img"><img src="images/icon-small-passport-red.png">
+                                                                    </div>
+                                                                    <div class="small-results-title"> Passport</div>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <div class="pull-right">
+                                                                        <!--<input class="small-upload-box margin-right-10" type = "file"/>-->
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <!--<input type="file" class="upload" />-->
+                                                                            <input type="file" multiple onchange="angular.element(this).scope().fileNameChanged(this)">
+                                                                        </div>
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row margin-top-5">
+                                                                <div class="col-md-5">
+                                                                    <div class="small-upload-box-img"><img src="images/icon-small-emiratesid-red.png">
+                                                                    </div>
+                                                                    <div class="small-results-title"> Emirates id</div>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <div class="pull-right">
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row margin-top-5">
+                                                                <div class="col-md-5">
+                                                                    <div class="small-upload-box-img"><img src="images/icon-small-residency-red.png">
+                                                                    </div>
+                                                                    <div class="small-results-title"> residence visa
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <div class="pull-right">
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row margin-top-5">
+                                                                <div class="col-md-6">
+                                                                    <div class="small-upload-box-img"><img src="images/icon-small-residency-red.png">
+                                                                    </div>
+                                                                    <div class="small-results-title"> Salary transfer letter </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="pull-right">
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                        <div class="fileUpload btn btn-default">
+                                                                            <span class="small-upload-box margin-right-10"></span>
+                                                                            <input type="file" class="upload" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-spacing">
+                                                <div class="col-sm-12">
+                                                    <div class="full-length-checkbox">
+                                                        <input type="checkbox" name="custom_checkbox" id="custom_checkbox1" value="custom_checkbox1">
+                                                        <label class="checkbox-label" for="custom_checkbox1">I agree that HSBC may disclose my information to any third party in A26:D159 to verify the information that I have provided to HSBC, including contacting my employer to verify my employment status and any other information in connection with my employment. I agree that HSBC can share information with credit reference agencies/bureaus and use information available from public sources to verify my identity and suitability for a [product]. I agree that when I apply for a [product] (or any credit facility with HSBC) then as part of my application, HSBC may, on an ongoing basis, request reports from credit reference agencies/bureaus to assess my ability to meet my financial commitments without further consent from me. I understand that to request multiple reports from credit reference agencies/bureaus may negatively impact my credit score which may make it difficult for me to obtain credit in the future </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center margin-bottom-20">
+                                                    <!-- The more complete each section is the more this will be completed -->
+                                                    <a href="" class="status-button" style="background-position: -150px 0px;"> <span class="btnspan"></span><span class="innerSpan">Continue</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END -->
+                            <!-- Address Information -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                                        <a class="collapsed disabledTrue" role="button" data-toggle="collapse"
+                                                            data-parent="#accordion-3"
+                                                            href="step-3.html#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                            Address Information
+                                                        </a>
+                                                        </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse panelData" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div ng-repeat="data in PanelThree" class="form-spacing row">
+                                                <cust-dir ng-repeat="d in data" datatype={{d.DataType}} datavalue={{d.DataValues}} class="{{d.Alignment}}" dataholder="{{d.Placeholder}}"></cust-dir>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center margin-bottom-20">
+                                                    <!-- The more complete each section is the more this will be completed -->
+                                                    <a href="" class="status-button" style="background-position: -150px 0px;"> <span class="btnspan"></span><span class="innerSpan">Continue</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END -->
+                            <!-- Employment Details -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                                            <a role="button" class="collapsed disabledTrue" data-toggle="collapse" data-parent="#accordion-3"
+                                                                href="step-3.html#collapseFour"
+                                                                aria-expanded="false" aria-controls="collapseFour">
+                                                                Employment details
+                                                            </a>
+                                                            </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse panelData" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div ng-repeat="data in PanelFour" class="form-spacing row">
+                                                <cust-dir ng-repeat="d in data" datatype={{d.DataType}} datavalue={{d.DataValues}} class="{{d.Alignment}}" dataholder="{{d.Placeholder}}"></cust-dir>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center margin-bottom-20">
+                                                    <!-- The more complete each section is the more this will be completed -->
+                                                    <a href="" class="status-button" style="background-position: -150px 0px;"> <span class="btnspan"></span><span class="innerSpan">Continue</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+
+
+                            <div class="panel-collapse collapse" id="related-products">
+                                <!-- Related Products -->
+                                <div class="row margin-top-30">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-sm-6 mobile-spacing text-center" id="cancel-overdraft-hide">
+                                                <div class="cross-sell">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 col-sm-5 col-md-4 remove-padding">
+                                                            <img src="images/overdraft-image.png" class="img-responsive cross-sell-image">
+                                                        </div>
+                                                        <div class="col-xs-8 col-sm-7 col-md-8 ">
+                                                            <div class="cross-sell-title">Free AED 30,000 Overdraft</div>
+                                                            <div class="cross-sell-description"> Your fee free Overdraft facility will be <strong>AED 30,000</strong>. First <strong>AED 15,000</strong> is interest free.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="button" value="Accept" class="btn percent-33 btn-dismiss btn-first">
+                                                        <input type="button" value="Reduce" class="btn percent-33 btn-dismiss btn-first">
+                                                        <input type="button" value="Cancel" class="btn percent-33 btn-dismiss" href="#cancel-overdraft" data-toggle="modal">
+                                                    </div>
+                                                </div>
+                                                <!-- Cancel Modal -->
+                                                <div id="cancel-overdraft" class="modal fade">
+                                                    <div class="modal-dialog save-popup">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <div class="col-sm-12">
+                                                                <h2 class="sub-heading margin-bottom-30"> ARE YOU SURE? </h2>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row margin-bottom-40 fix-modal-padding">
+                                                                    <div class="col-md-12 text-center">
+                                                                        <p>Cancelling the limit means that you will not be covered for the cheque bounce protection, which is an integral part of our proposition.</p>
+                                                                        <a href="#" class="red-button overdraft-remove" data-dismiss="modal">Yes Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 text-center" id="cancel-card-hide">
+                                                <div class="cross-sell">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 col-sm-5 col-md-4 remove-padding">
+                                                            <img src="images/cash-card-image.png" class="img-responsive cross-sell-image">
+                                                        </div>
+                                                        <div class="col-xs-8 col-sm-7 col-md-8 ">
+                                                            <div class="cross-sell-title">AED 50,000 Card Limit</div>
+                                                            <div class="cross-sell-description"> Your fee free HSBC Premier MasterCard credit card limit will be <strong>AED 50,000</strong>.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <input type="button" value="Accept" class="btn percent-33 btn-dismiss btn-first">
+                                                        <input type="button" value="Reduce" class="btn percent-33 btn-dismiss btn-first">
+                                                        <input type="button" value="Cancel" class="btn percent-33 btn-dismiss" href="#cancel-overdraft" data-toggle="modal">
+                                                    </div>
+                                                </div>
+                                                <!-- Cancel Modal -->
+                                                <div id="cancel-card" class="modal fade">
+                                                    <div class="modal-dialog save-popup">
+                                                        <div class="modal-content">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <div class="col-sm-12">
+                                                                <h2 class="sub-heading margin-bottom-30"> ARE YOU SURE? </h2>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row margin-bottom-40 fix-modal-padding">
+                                                                    <div class="col-md-12 text-center">
+                                                                        <p>Cancelling the limit means that you will miss out on some of the key benefits i.e. Free movie tickets, Entertainer offers etc. which is an integral part of our proposition.</p>
+                                                                        <a href="#" class="red-button card-remove" data-dismiss="modal">Yes Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Related Products -->
+                            </div>
+                            <!-- Almost there -->
+                            <div class="panel panel-default" id="almost-there">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                                                <a role="button" data-toggle="collapse" class="collapsed disabledTrue" data-parent="#accordion-3"
+                                                                    href="step-3.html#collapseFive"
+                                                                    aria-expanded="false" aria-controls="collapseFive">
+                                                                    Almost there - just a few more details
+                                                                </a>
+                                                                </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse panelData" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <div ng-repeat="data in PanelFive" class="form-spacing row">
+                                            <cust-dir ng-repeat="d in data" datatype={{d.DataType}} datavalue={{d.DataValues}} class="{{d.Alignment}}" dataholder="{{d.Placeholder}}"></cust-dir>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-30">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-reference-number" ng-show="isRefGenerated"> Application Reference Number: <strong>{{refNumber}}</strong> </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="clearfix">
+                            <div class="col-md-6"> <a href="step-2.html" class="big-back-button"> Back </a> </div>
+                            <div class="col-md-6 remove-padding text-center">
+                                <!-- <a href="step-4.html" class="big-continue-button"> Submit </a> -->
+                                <button class="big-continue-button" ng-click="gotoAccountsStepFour()"> Submit </button>
+                                <a href="step-3.html#save" id="saveforlater" data-toggle="modal" class="margin-top-10 save-link text-center" ng-show="isRefGenerated"> Save for later </a> </div>
+                        </div>
+                        <!-- save for later Pop Up Styling -->
+                        <div id="save" class="modal fade">
+                            <div class="modal-dialog save-popup">
+                                <div class="modal-content ">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class="col-sm-12">
+                                        <h2 class="sub-heading margin-bottom-30"> SAVE FOR LATER? </h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row margin-bottom-40 fix-modal-padding">
+                                            <div class="col-md-12 text-center">
+                                                <p><strong>Need to continue later?</strong>
+                                                    <br> No problem, we have saved your application and you can come back later to finish it. Your application will remain for up 30 days.</p>
+                                                <div ng-show="isRefGenerated">
+                                                    <p> Your application reference number is <span>{{refNumber}}</span> </p>
+                                                <a class="red-button" href="">Email me reference number</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar Account -->
+        <div class="col-sm-4 hidden-xs hidden-sm" ng-show="isAccountView">
+            <div class="sidebar">
+                <div class="sidebar-card">
+                    <div class="circle position-relative">
+                        <div class="circle__inner">
+                            <div class="circle__wrapper">
+                                <div class="circle__content">
+                                    <div class="accounts-title">{{accountInfo[currAccount-1].Title}}</div>
+                                    <div class="accounts-amount">{{accountInfo[currAccount-1].Benefits[0].Title}}</div>
+                                    <div class="accounts-subtitle">{{accountInfo[currAccount-1].Benefits[0].Content}}</div>
+                                    <div class="hidden-xs">
+                                        <div class="accounts-amount">{{accountInfo[currAccount-1].Benefits[1].Title}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circle-percentage">
+                        </div>
+                    </div>
+                    <div class="sidebar-card-added">
+                        <img ng-src="{{cardInfo[currCard-1].ImageUrl}}" class="img-responsive">
+                        <div class="position-relative">
+                            <div class="card-example"><span class="card-example-first">{{firstname}}</span> <span class="card-example-second">{{lastname}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="card-example"></div>
+                        <div class="card-example-last"></div>
+                    </div>
+                </div>
+                <div class="title-style-one">At a glance</div>
+                <div class="small-divider"></div>
+                <div class="description-text margin-bottom-20">
+                    {{summary}}
+                </div>
+                <div class="sidebar-links">
+                    <ul>
+                        <li><a href="#">Eligibility</a>
+                        </li>
+                        <li><a href="#">Terms &amp; conditions</a>
+                        </li>
+                        <li><a href="#">Fees &amp; charges</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Credit Card -->
+        <div class="col-sm-4 hidden-xs hidden-sm" ng-show="isCardView">
+            <div class="sidebar">
+                <div class="sidebar-card">
+                    <img ng-src="{{cardInfo[currCard-1].ImageUrl}}" class="img-responsive">
+                    <div class="position-relative">
+                        <div class="card-example"><span class="card-example-first">{{firstname}}</span> <span class="card-example-second">{{lastname}}</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-account-added">
+                        <div class="circle position-relative">
+                            <div class="circle__inner">
+                                <div class="circle__wrapper">
+                                    <div class="circle__content">
+                                        <div class="accounts-title">{{accountInfo[currAccount-1].Title}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="circle-overlay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-account-added-spacing"></div>
+                <h1 class="main-heading-style-two">
+                                                    HSBC {{cardInfo[currCard-1].Title}} &amp; {{accountInfo[currAccount-1].Title}}
+                                                    </h1>
+                <div class="title-style-one">At a glance</div>
+                <div class="small-divider"></div>
+                <div class="description-text margin-bottom-20">
+                    {{accountInfo[currAccount-1].Summary}}
+                </div>
+                <div class="sidebar-links">
+                    <ul>
+                        <li><a href="#">Eligibility</a>
+                        </li>
+                        <li><a href="#">Terms &amp; conditions</a>
+                        </li>
+                        <li><a href="#">Fees &amp; charges</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

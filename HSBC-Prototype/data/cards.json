@@ -1,0 +1,176 @@
+{
+	"Items":[
+		 {
+            "ID":  "1",
+            "Title":  "HSBC Black Credit Card",
+            "Categories": "Credit Card",
+            "MonthlySalary": "50000",
+            "MinimumAgePrimary": "21",
+            "MinimumAgeSupplementary": "18",
+            "MinimumAnnualIncome": "36000",
+            "InterestRate": "2.5",
+            "InterestedIn": "Dining",
+            "Summary": "The top-of-the-line HSBC Black MasterCard® Credit Card is designed to provide you with experiences that you'll cherish for the rest of your life. From travel to culinary experiences, culture and shopping there's no limit to where the benefits can take you.",
+            "ImageUrl": "http://devlabs.synechron.com/hsbc/images/black-card.png",
+            "CircleTitleOne": "250,000 Bonus Air Miles ",
+            "CircleTitleOneDescription": "Receive 250,000 joining bonus Air Miles",
+            "CircleTitleTwo": "Lounge Access",
+            "CircleTitleTwoDescription": "Unlimited access at over 500 premium airport lounges worldwide provided by LoungeKeyTM",
+            "Benefits":[
+              {
+                "Title":"250,000 Bonus Air Miles",
+                "Content":"Receive 250,000 joining bonus Air Miles"
+              },
+              {
+                "Title":"Golf Privileges",
+                "Content":"Exclusive golfing privileges at the Al Badia Golf Club by InterContinental Dubai Festival City"
+              },
+              {
+                "Title":"Lounge Access",
+                "Content":"Unlimited access at over 500 premium airport lounges worldwide provided by LoungeKeyTM"
+              },
+              {
+                "Title":"Air Miles Rewards Program",
+                "Content":"Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+              },
+              {
+                "Title":"Entertainer & I Love Dining",
+                "Content":"Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+              }
+            ],            
+            "KeyFeatures": "<ul><li>250,000 Bonus Air Miles</li><li>Golf Privileges</li><li>Lounge Access</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li></ul>",
+            "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/black-card",
+            "FeesAndCharges": "",
+	    "RelatedCard": "2"	
+        },
+        {
+            "ID":  "2",
+            "Title":  "HSBC Premier Credit Card",
+            "Categories": "Credit Card",
+            "MonthlySalary": "50000",
+            "MinimumAgePrimary": "21",
+            "MinimumAgeSupplementary": "18",
+            "MinimumAnnualIncome": "36000",
+            "InterestRate": "2.5",
+            "InterestedIn": "Dining",
+            "Summary": "Whether you're at home or travelling, your HSBC Premier Credit Card is part of your seamless banking experience, providing you with a complete range of exclusive benefits covering dining, shopping, travel and entertainment.",
+            "ImageUrl": "http://devlabs.synechron.com/hsbc/images/premier-card.png",
+            "CircleTitleOne": "No Annual fees",
+            "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+            "CircleTitleTwo": "Exclusive Premier Travel Privileges ",
+            "CircleTitleTwoDescription": "Discounted hotels and access to airport lounges",
+            "Benefits":[
+              {
+                "Title":"No Annual fees",
+                "Content":"Enjoy your HSBC Premier Credit Card without any annual membership fees"
+              },
+              {
+                "Title":"Exclusive Premier Travel Privileges",
+                "Content":"Discounted hotels and access to airport lounges"
+              },
+              {
+                "Title":"Free Valet Parking",
+                "Content":"At selected Valtrans locations around Dubai and Abu Dhabi"
+              },
+              {
+                "Title":"Air Miles Rewards Program",
+                "Content":"Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+              },
+              {
+                "Title":"Entertainer & I Love Dining",
+                "Content":"Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+              }
+            ],            
+            "KeyFeatures": "<ul><li>No Annual Fees</li><li>Exclusive Premier Travel Privileges </li><li>Valet Parking</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li></ul>",
+            "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/premier-card",
+            "FeesAndCharges": "",
+	    "RelatedCard": "1"	
+        },
+        {
+            "ID":  "3",
+            "Title":  "HSBC Advance Credit Card",
+            "Categories": "Credit Card",
+            "MonthlySalary": "15000",
+            "MinimumAgePrimary": "21",
+            "MinimumAgeSupplementary": "18",
+            "MinimumAnnualIncome": "36000",
+            "InterestRate": "2.9",
+            "InterestedIn": "Dining",
+            "Summary": "Enjoy special offers and privileges all year round covering dining, shopping, travel and entertainment. We'll offer you localized offers and rewards that we think you'll be interested in, as well as discounted rates that we're sure you'll enjoy.",
+            "ImageUrl": "http://devlabs.synechron.com/hsbc/images/advance-card.png",
+            "CircleTitleOne": "No Annual fees",
+            "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+            "CircleTitleTwo": "Lounge Access",
+            "CircleTitleTwoDescription": "Travel in comfort with free access to a range of MENA airport lounges",
+            "Benefits":[
+              {
+                "Title":"No Annual fees",
+                "Content":"Enjoy your HSBC Premier Credit Card without any annual membership fees"
+              },
+              {
+                "Title":"Lounge Access",
+                "Content":"Travel in comfort with free access to a range of MENA airport lounges"
+              },
+              {
+                "Title":"Free Valet Parking",
+                "Content":"At selected Valtrans locations around Dubai and Abu Dhabi"
+              },
+              {
+                "Title":"Air Miles Rewards Program",
+                "Content":"Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+              },
+              {
+                "Title":"Entertainer & I Love Dining",
+                "Content":"Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+              },
+              {
+                "Title":"Careem Offer",
+                "Content":"Discounted Chauffeur Rides with Careem"
+              }
+            ],            
+            "KeyFeatures": "<ul><li>No Annual Fees</li><li>Lounge Access</li><li>Free Valet Parking</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li><li>Careem Offer</li</ul>",
+            "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/advance-card",
+            "FeesAndCharges": "",
+	    "RelatedCard": ""	
+        },
+        {
+            "ID":  "4",
+            "Title":  "HSBC Platinum Cashback Card",
+            "Categories": "Credit Card",
+            "MonthlySalary": "7500",
+            "MinimumAgePrimary": "21",
+            "MinimumAgeSupplementary": "18",
+            "MinimumAnnualIncome": "36000",
+            "InterestRate": "2.9",
+            "InterestedIn": "Dining",
+            "Summary": "The ultimate utility card if you’re looking for one. With the HSBC Platinum Cashback card, get guaranteed cashback of up to 10% on all your credit card spends. And that’s just the beginning. Enjoy special offers and rewards on your day-to-day activities, like ‘buy 1 get 1 free’ ticket at VOX cinemas or special discounts at over 100 restaurants in the UAE.",
+            "ImageUrl": "http://devlabs.synechron.com/hsbc/images/platnium-card.png",
+            "CircleTitleOne": "Air Miles Rewards Program",
+            "CircleTitleOneDescription": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination",
+            "CircleTitleTwo": "Entertainer & I Love Dining",
+            "CircleTitleTwoDescription": "Free download of our ’Buy 1 Get 1 Free’ mobile app with over 8,000 offers across 15 countries",
+            "Benefits":[              
+              {
+                "Title":"Air Miles Rewards Program",
+                "Content":"Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+              },
+              {
+                "Title":"Entertainer & I Love Dining",
+                "Content":"Free download of our ’Buy 1 Get 1 Free’ mobile app with over 8,000 offers across 15 countries"
+              },
+              {
+                "Title":"Free Valet Parking",
+                "Content":"At selected Valtrans locations around Dubai and Abu Dhabi"
+              },
+              {
+                "Title":"Cinema Offer",
+                "Content":"'Buy 1 Get 1 Free' at VOX Cinema"
+              }
+            ],            
+            "KeyFeatures": "<ul><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li><li>Valet Parking</li><li>I Love Dining</li><li>Entertainer & I Love Dining</li><li>Cinema Offer</li</ul>",
+            "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/platinum-select-card",
+            "FeesAndCharges": "",
+	    "RelatedCard": ""	
+        }
+	]
+}

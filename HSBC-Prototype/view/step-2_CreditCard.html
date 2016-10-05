@@ -1,0 +1,209 @@
+<div class="container" ng-controller="stepTwoCCController">
+    <div class="row margin-bottom-30">
+        <div class="col-md-7 col-sm-6 mobile-spacing">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="main-heading-style-two">
+                        {{title}}
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row margin-top-10 ">
+                <div class="col-md-12">
+                    <div class="position-relative">
+                        <div class="account-added"><img ng-src="{{initialCardImage}}" class="img-responsive" alt="Card Image">
+                        </div>
+                        <div class="account-positioned empty-account" ng-show="blankImg">
+                            <a href="step-2_creditCard.html#myModal-accounts-creditcards" role="button" data-toggle="modal">
+                                <div class="circle">
+                                <div class="circle__inner">
+                                    <div class="circle__wrapper">
+                                        <div class="circle__content">
+                                            <div class="add-account">+</div>
+                                            <div class="accounts-title margin-top-30">Add an account to this Credit Card?</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="account-positioned filled-account animated bounceIn" ng-show="cardImg">
+                            <div class="circle">
+                                <div class="circle__inner">
+                                    <div class="circle__wrapper">
+                                        <div class="circle__content">
+                                            <div class="accounts-title">{{accountInfo[currAccount-1].Title}}</div>
+                                            <div class="accounts-amount"><span>aed </span>{{accountInfo[currAccount-1].MonthlySalary|currency:"":0}}</div>
+                                            <div class="accounts-subtitle">Minimum Monthly Income</div>
+
+                                            <div class="accounts-amount"><span>aed </span>{{accountInfo[currAccount-1].MinimumAvgBalance|currency:"":0}}</div>
+                                            <div class="accounts-subtitle">Minimum Avg balance</div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Choose Account Pop Up Styling -->
+        <div id="myModal-accounts-creditcards" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="col-sm-12">
+                        <h2 class="sub-heading margin-bottom-30"> Please select an option to continue </h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row margin-bottom-40 acc">
+                            <div class="col-md-6"  ng-repeat="acc in addAccounts">
+                                <a class="white-box text-center" id="premier-card-choose" ng-href="#" ng-click='onAccountOptionClick(acc)' data-dismiss="modal"
+                                   aria-hidden="true">
+
+                                    <div class="white-box-title">{{acc.Title}}</div>
+                                    <div class="white-box-description">{{acc.cardOptionDetails}}
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="white-box-button text-center">
+                                            Add Account
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-md-5 col-sm-6">
+        <div class="padding-left-20">
+                    <div class="title-style-one">At a glance</div>
+                    <div class="small-divider"></div>
+                    <div class="description-text margin-bottom-20">
+                        {{cardInfo[currCard-1].Summary}}
+                    </div>
+
+                    <div class="accordian-title">{{accordianTitle}}</div>
+                    <div id="accorStep2">
+                        <uib-accordion close-others="true">
+                          <uib-accordion-group is-open="tab.state" ng-repeat="tab in Tabs">
+                            <uib-accordion-heading>
+                              {{tab.header}}
+                            </uib-accordion-heading>
+                              {{tab.content}}
+                          </uib-accordion-group>    
+                        </uib-accordion>    
+                    </div>      
+                   
+
+                    <a href="step-3.html" role="button" class="red-button with-background" ng-click="gotoAccountThirdStep()"> Apply Now</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row margin-top-60">
+            <div class="col-sm-12">
+                <a href="{{cardInfo[currCard-1].WebsiteURL}}" target="_blank" class="learn-more-show more-block">Benefits of {{title}}</a>
+            </div>
+        </div>
+
+        <div class="row margin-top-30" ng-show="hvRelatedCards">
+            <div class="col-md-12">
+                <div class="white-box-intro-title">
+                    Here are some more options
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-same-height" ng-show="hvRelatedCards">
+            <div class="col-sm-6 mobile-spacing tablet-spacing col-same-height" ng-repeat="card in relatedCard" ng-click="onRelatedCardClick(card)">
+                <a class="white-box position-relative" href="" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="position-relative">
+                                <div class="white-box-image">
+                                    <img ng-src="{{cardInfo[card-1].ImageUrl}}" class="img-responsive center-block">
+                                </div>
+
+                                <div class="text-center margin-top-minus">
+                                <div class="accounts-amount"><span>aed </span>{{cardInfo[card-1].MonthlySalary|currency:"":0}}</div>
+                                <div class="accounts-subtitle">Minimum Monthly Income</div>
+                                </div>
+
+                                <!--<div class="small-account-circle-positioned">-->
+                                    <!--<div class="small-circle position-relative">-->
+                                        <!--<div class="small-circle__inner">-->
+                                            <!--<div class="small-circle__wrapper">-->
+                                                <!--<div class="small-circle__content">-->
+                                                    <!--<div class="white-box-title">HSBC Platnium Account</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="white-box-title">{{cardInfo[card-1].Title}} &amp; {{cardInfo[card-1].AccountRequirement}} </div>
+                            <div class="white-box-description">{{cardInfo[card-1].Summary| limitTo: 100}}{{cardInfo[card-1].Summary.length > 100 ? '...' : ''}}
+                            </div>
+                            <div class="white-box-button text-center">
+                                More Info
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="red-overlay" ng-show="hoverEdit">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="red-overlay-title">  Minimum annual income requirement:</div>
+                                <div class="red-overlay-subtitle">  AED {{cardInfo[card-1].MinimumAnnualIncome|currency:"":0}} per annum</div>
+
+                                <div class="red-overlay-title"> {{cardInfo[card-1].MinimumAgePrimary}} Years Old</div>
+                                <div class="red-overlay-subtitle remove-margin-bottom">21 Years Old</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="red-overlay-title"> Minimum age for supplementary cardholder</div>
+                                <div class="red-overlay-subtitle">{{cardInfo[card-1].MinimumAgeSupplementary}} Years Old</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="white-box-button remove-margin-bottom">
+                                    More Info
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>                              
+
+        <div class="visible-xs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pagination-block center-block">
+                        <ul class="pagination">
+                            <li class="pagination-item active"></li>
+                            <li class="pagination-item"></li>
+                            <li class="pagination-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>       
+
+        </div> 
+    </div>      

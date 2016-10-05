@@ -1,0 +1,660 @@
+{
+  "CardItems": [
+    {
+      "ID": "1",
+      "Title": "Premier Credit Card",
+      "Categories": "Credit Card",
+      "MonthlySalary": "50000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "MinimumAvgBalance": "350000",
+      "InterestRate": "2.25",
+      "InterestedIn": "Dining",
+      "Summary": "Whether you're at home or travelling, your HSBC Premier Credit Card is part of your seamless banking experience, providing you with a complete range of exclusive benefits covering dining, shopping, travel and entertainment.",
+      "ImageUrl": "http://devlabs.synechron.com/hsbc/images/premier-card.png",
+      "CircleTitleOne": "No Annual fees",
+      "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Exclusive Premier Travel Privileges ",
+      "CircleTitleTwoDescription": "Discounted hotels and access to airport lounges",
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "Free primary card annual fee, with all supplementary cards free of charge. Minimum payment is 5% of outstanding balance or AED100 (whichever is higher)"
+        },
+        {
+          "Title": "No Annual fees",
+          "Content": "Enjoy your HSBC Premier Credit Card without any annual membership fees"
+        },
+        {
+          "Title": "Exclusive Premier Travel Privileges",
+          "Content": "Discounted hotels and access to airport lounges"
+        },
+        {
+          "Title": "Free Valet Parking",
+          "Content": "At selected Valtrans locations around Dubai and Abu Dhabi"
+        },
+        {
+          "Title": "Air Miles Rewards Program",
+          "Content": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+        },
+        {
+          "Title": "Entertainer & I Love Dining",
+          "Content": "Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+        }
+      ],
+      "KeyFeatures": "<ul><li>No Annual Fees</li><li>Exclusive Premier Travel Privileges </li><li>Valet Parking</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li></ul>",
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/premier-card",
+      "FeesAndCharges": "Free",
+      "AddAccount": "1",
+      "AccountRequirement": "Premier Current Account",
+      "RelatedCard": "2,4"
+    },
+    {
+      "ID": "2",
+      "Title": "Black Credit Card",
+      "Categories": "Credit Card",
+      "MonthlySalary": "50000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "MinimumAvgBalance": "350,000",
+      "InterestRate": "2.25",
+      "InterestedIn": "Dining",
+      "Summary": "The top-of-the-line HSBC Black MasterCard' Credit Card is designed to provide you with experiences that you'll cherish for the rest of your life. From travel to culinary experiences, culture and shopping there's no limit to where the benefits can take you.",
+      "ImageUrl": "http://devlabs.synechron.com/hsbc/images/black-card.png",
+      "CircleTitleOne": "250,000 Bonus Air Miles ",
+      "CircleTitleOneDescription": "Receive 250,000 joining bonus Air Miles",
+      "CircleTitleTwo": "Lounge Access",
+      "CircleTitleTwoDescription": "Unlimited access at over 500 premium airport lounges worldwide provided by LoungeKeyTM",
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "AED 2,000 primary card annual fee, with all supplementary cards free of charge. Minimum payment is 5% of outstanding balance or AED100 (whichever is higher)"
+        },
+        {
+          "Title": "250,000 Bonus Air Miles",
+          "Content": "Receive 250,000 joining bonus Air Miles"
+        },
+        {
+          "Title": "Golf Privileges",
+          "Content": "Exclusive golfing privileges at the Al Badia Golf Club by InterContinental Dubai Festival City"
+        },
+        {
+          "Title": "Lounge Access",
+          "Content": "Unlimited access at over 500 premium airport lounges worldwide provided by LoungeKeyTM"
+        },
+        {
+          "Title": "Air Miles Rewards Program",
+          "Content": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+        },
+        {
+          "Title": "Entertainer & I Love Dining",
+          "Content": "Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+        }
+      ],
+      "KeyFeatures": "<ul><li>250,000 Bonus Air Miles</li><li>Golf Privileges</li><li>Lounge Access</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li></ul>",
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/black-card",
+      "FeesAndCharges": "AED 2,000",
+      "AddAccount": "1",
+      "AccountRequirement": "Premier Current Account",
+      "RelatedCard": "1,4"
+    },    
+    {
+      "ID": "3",
+      "Title": "Advance Credit Card",
+      "Categories": "Credit Card",
+      "MonthlySalary": "15000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "MinimumAvgBalance": "100000",
+      "InterestRate": "2.99",
+      "InterestedIn": "Dining",
+      "Summary": "Enjoy special offers and privileges all year round covering dining, shopping, travel and entertainment. We'll offer you localized offers and rewards that we think you'll be interested in, as well as discounted rates that we're sure you'll enjoy.",
+      "ImageUrl": "http://devlabs.synechron.com/hsbc/images/advance-card.png",
+      "CircleTitleOne": "No Annual fees",
+      "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Lounge Access",
+      "CircleTitleTwoDescription": "Travel in comfort with free access to a range of MENA airport lounges",
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "Free primary card annual fee, with up to 2 supplementary cards free of charge. Minimum payment is 5% of outstanding balance or AED100 (whichever is higher)"
+        },
+        {
+          "Title": "No Annual fees",
+          "Content": "Enjoy your HSBC Premier Credit Card without any annual membership fees"
+        },
+        {
+          "Title": "Lounge Access",
+          "Content": "Travel in comfort with free access to a range of MENA airport lounges"
+        },
+        {
+          "Title": "Free Valet Parking",
+          "Content": "At selected Valtrans locations around Dubai and Abu Dhabi"
+        },
+        {
+          "Title": "Air Miles Rewards Program",
+          "Content": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+        },
+        {
+          "Title": "Entertainer & I Love Dining",
+          "Content": "Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+        },
+        {
+          "Title": "Careem Offer",
+          "Content": "Discounted Chauffeur Rides with Careem"
+        }
+      ],
+      "KeyFeatures": "<ul><li>No Annual Fees</li><li>Lounge Access</li><li>Free Valet Parking</li><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li><li>Careem Offer</li</ul>",
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/advance-card",
+      "FeesAndCharges": "Free",
+      "AddAccount": "3",
+      "AccountRequirement": "Advance Current Account",
+      "RelatedCard": "4"
+    },
+    {
+      "ID": "4",
+      "Title": "Platinum Cashback Card",
+      "Categories": "Credit Card",
+      "MonthlySalary": "7500",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "MinimumAvgBalance": "0",
+      "InterestRate": "2.99",
+      "InterestedIn": "Dining",
+      "Summary": "The ultimate utility card if you're looking for one. With the HSBC Platinum Cashback card, get guaranteed cashback of up to 10% on all your credit card spends. And that's just the beginning. Enjoy special offers and rewards on your day-to-day activities, like 'buy 1 get 1 free' ticket at VOX cinemas or special discounts at over 100 restaurants in the UAE.",
+      "ImageUrl": "http://devlabs.synechron.com/hsbc/images/platnium-card.png",
+      "CircleTitleOne": "Air Miles Rewards Program",
+      "CircleTitleOneDescription": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination",
+      "CircleTitleTwo": "Entertainer & I Love Dining",
+      "CircleTitleTwoDescription": "Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries",
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "AED 600 primary card annual fee, with AED 100 for supplementary cards (one time set-up fee for separate limit).  Minimum payment is 5% of outstanding balance or AED100 (whichever is higher)"
+        },
+        {
+          "Title": "Air Miles Rewards Program",
+          "Content": "Air Miles rewards that can be redeemed for flights with any airline, at any time to any destination"
+        },
+        {
+          "Title": "Entertainer & I Love Dining",
+          "Content": "Free download of our 'Buy 1 Get 1 Free' mobile app with over 8,000 offers across 15 countries"
+        },
+        {
+          "Title": "Free Valet Parking",
+          "Content": "At selected Valtrans locations around Dubai and Abu Dhabi"
+        },
+        {
+          "Title": "Cinema Offer",
+          "Content": "'Buy 1 Get 1 Free' at VOX Cinema"
+        }
+      ],
+      "KeyFeatures": "<ul><li>Air Miles Rewards Program</li><li>Entertainer & I Love Dining</li><li>Valet Parking</li><li>I Love Dining</li><li>Entertainer & I Love Dining</li><li>Cinema Offer</li</ul>",
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/cred-cards/platinum-select-card",
+      "FeesAndCharges": "AED 600",
+      "AddAccount": "*,5,6",
+      "RelatedCard": ""
+    }
+  ],
+  "AccountItems": [
+    {
+      "ID": "1",
+      "Title": "Premier Current Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "50000",
+      "MinimumAgePrimary": "21",
+      "MinimumAvgBalance": "350000",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "Get an account that travels with you. Available in multiple currencies, it comes with an international debit card, a dedicated Premier Relationship Manager to help you manage your money and take advantage of investment opportunities. You will also get 24/7 Internet banking with Global View so you can manage all your accounts with just one log on.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Free Credit Card",
+      "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Free instant international transfers",
+      "CircleTitleTwoDescription": "Free instant money transfers within 6 seconds between your HSBC accounts globally",
+      "KeyFeatures": [
+        {
+          "Feature": "Free HSBC Premier Credit Card"
+        },
+        {
+          "Feature": "Free instant money transfers between your HSBC accounts globally"
+        },
+        {
+          "Feature": "Your Dedicated Relationship Manager"
+        },
+        {
+          "Feature": "Wealth Management"
+        },
+        {
+          "Feature": "Preferential rates"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Your Relationship Manager",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Wealth Management",
+          "Content": "A seamless banking experience with exclusive benefits, no annual fees, low interest rates & more."
+        },
+        {
+          "Title": "HSBC Premier MasterCard Credit Card",
+          "Content": "A seamless banking experience with exclusive benefits, no annual fees, low interest rates & more."
+        },
+        {
+          "Title": "Money Transfers",
+          "Content": "Quick transfers within the UAE and around the world, with preferential tariffs and a lot more."
+        },
+        {
+          "Title": "Mortgages",
+          "Content": "Avail of discounts on processing fees, highly specialised team of Mortgage Advisers & more"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/premier/your-features/current-account",
+      "cardOptionDetails": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+      "FeesAndCharges": "",      
+      "AddCard":"1,2,4",
+      "RelatedCard": "2,7"
+    },
+    {
+      "ID": "2",
+      "Title": "Premier Savings Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "50000",
+      "MinimumAvgBalance": "350000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "Get an account that travels with you. Available in multiple currencies, it comes with an international debit card, a dedicated Premier Relationship Manager to help you manage your money and take advantage of investment opportunities. You will also get 24/7 Internet banking with Global View so you can manage all your accounts with just one log on.  The Savings Account also enables secure and flexible way to save for the things that are important to you. Not only do you earn interest, but you also have immediate access to your money.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Free Credit Card",
+      "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Free instant international transfers",
+      "CircleTitleTwoDescription": "Free instant money transfers within 6 seconds between your HSBC accounts globally",
+      "KeyFeatures": [
+        {
+          "Feature": "Free HSBC Premier Credit Card"
+        },
+        {
+          "Feature": "Free instant money transfers between your HSBC accounts globally"
+        },
+        {
+          "Feature": "Your Dedicated Relationship Manager"
+        },
+        {
+          "Feature": "Wealth Management"
+        },
+        {
+          "Feature": "Preferential rates"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Your Relationship Manager",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Wealth Management",
+          "Content": "A seamless banking experience with exclusive benefits, no annual fees, low interest rates & more."
+        },
+        {
+          "Title": "HSBC Premier MasterCard Credit Card",
+          "Content": "A seamless banking experience with exclusive benefits, no annual fees, low interest rates & more."
+        },
+        {
+          "Title": "Money Transfers",
+          "Content": "Quick transfers within the UAE and around the world, with preferential tariffs and a lot more."
+        },
+        {
+          "Title": "Mortgages",
+          "Content": "Avail of discounts on processing fees, highly specialised team of Mortgage Advisers & more"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/premier/your-features/current-account",
+      "cardOptionDetails": "search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident",
+      "FeesAndCharges": "",
+      "AddCard":"1,2,4",
+      "RelatedCard": "1,7"
+    },
+    {
+      "ID": "3",
+      "Title": "Advance Current Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "15000",
+      "MinimumAvgBalance": "100000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "Start building your financial life with a priority bank account that offers special rates, offers and personalised service.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Free Credit Card",
+      "CircleTitleOneDescription": "Enjoy your HSBC Advance Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Free instant international transfers",
+      "CircleTitleTwoDescription": "Free instant money transfers within 6 seconds between your HSBC accounts globally",
+      "KeyFeatures": [
+        {
+          "Feature": "Free HSBC Advance Credit Card"
+        },
+        {
+          "Feature": "Free instant money transfers between your HSBC accounts globally"
+        },
+        {
+          "Feature": "Assistance from HSBC Wealth Advisors"
+        },
+        {
+          "Feature": "Preferential rates on banking products"
+        },
+        {
+          "Feature": "Travel Benefits"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Banking Benefits",
+          "Content": "Enjoy preferential and convenient day-to-day banking services."
+        },
+        {
+          "Title": "Mobile Banking",
+          "Content": "Manage your bank accounts on the go and round the clock."
+        },
+        {
+          "Title": "Protection and Expert advice",
+          "Content": "Choose the right options when planning your financial future"
+        },
+        {
+          "Title": "HSBC Advance Platinum Credit Card",
+          "Content": "No annual fees and enjoy special offers all year round covering dining, shopping, travel and entertainment"
+        },
+        {
+          "Title": "Travel",
+          "Content": "Enjoy privileges and peace of mind when you travel anywhere in the world"
+        }
+      ],
+      "BenefitFiveContent": "Enjoy privileges and peace of mind when you travel anywhere in the world",
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/hsbc-advance",
+      "cardOptionDetails": "it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text",
+      "FeesAndCharges": "",
+      "AddCard": "3,4",
+      "RelatedCard": "4,7"
+    },
+    {
+      "ID": "4",
+      "Title": "Advance Savings Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "15000",
+      "MinimumAvgBalance": "100000",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "Start building your financial life with a priority bank account that offers special rates, offers and personalised service.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Free Credit Card",
+      "CircleTitleOneDescription": "Enjoy your HSBC Premier Credit Card without any annual membership fees",
+      "CircleTitleTwo": "Free instant international transfers",
+      "CircleTitleTwoDescription": "Free instant money transfers within 6 seconds between your HSBC accounts globally",
+      "KeyFeatures": [
+        {
+          "Feature": "Free HSBC Advance Credit Card"
+        },
+        {
+          "Feature": "Free instant money transfers between your HSBC accounts globally"
+        },
+        {
+          "Feature": "Assistance from HSBC Wealth Advisors"
+        },
+        {
+          "Feature": "Preferential rates on banking products"
+        },
+        {
+          "Feature": "Travel Benefits"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Banking Benefits",
+          "Content": "Enjoy preferential and convenient day-to-day banking services."
+        },
+        {
+          "Title": "Mobile Banking",
+          "Content": "Manage your bank accounts on the go and round the clock."
+        },
+        {
+          "Title": "Protection and Expert advice",
+          "Content": "Choose the right options when planning your financial future"
+        },
+        {
+          "Title": "HSBC Advance Platinum Credit Card",
+          "Content": "No annual fees and enjoy special offers all year round covering dining, shopping, travel and entertainment"
+        },
+        {
+          "Title": "Travel",
+          "Content": "Enjoy privileges and peace of mind when you travel anywhere in the world"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/hsbc-advance",
+      "cardOptionDetails": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly ",
+      "FeesAndCharges": "",
+      "AddCard": "3,4",
+      "RelatedCard": "3,7"
+    },
+    {
+      "ID": "5",
+      "Title": "Current Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "7500",
+      "MinimumAvgBalance": "0",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "An HSBC Current account is a transactional account offering 24/7 access through online banking, mobile banking and phone banking, allowing you to manage your money with ease.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Banking Benefits",
+      "CircleTitleOneDescription": "Up to 2 free cash withdrawals and 1 free balance inquiry on non-HSBC Switch ATMs per month",
+      "CircleTitleTwo": "24/7 Banking ",
+      "CircleTitleTwoDescription": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts",
+      "KeyFeatures": [
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        },
+        {
+          "Feature": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Feature": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        },
+        {
+          "Feature": "Free HSBC VISA Platinum Select Credit Card"
+        },
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Banking Benefits",
+          "Content": "Enjoy preferential and convenient day-to-day banking services."
+        },
+        {
+          "Title": "HSBC VISA Platinum Select Credit Card",
+          "Content": "No annual fees and enjoy offers discounts on entertainment, shopping, dining and much more."
+        },
+        {
+          "Title": "24/7 Banking",
+          "Content": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Title": "Multiple currencies",
+          "Content": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/current-accounts/basic-account",
+      "cardOptionDetails": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+      "FeesAndCharges": "",
+      "AddCard": "*,4",
+      "RelatedCard": "6,7"
+    },
+    {
+      "ID": "6",
+      "Title": "Savings Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "7500",
+      "MinimumAvgBalance": "0",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "An HSBC Savings Account is the secure and flexible way to save for the things that are important to you. Not only do you earn interest, but you also have immediate access to your money.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Banking Benefits",
+      "CircleTitleOneDescription": "Up to 2 free cash withdrawals and 1 free balance inquiry on non-HSBC Switch ATMs per month",
+      "CircleTitleTwo": "24/7 Banking ",
+      "CircleTitleTwoDescription": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts",
+      "KeyFeatures": [
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        },
+        {
+          "Feature": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Feature": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        },
+        {
+          "Feature": "Free HSBC VISA Platinum Select Credit Card"
+        },
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Banking Benefits",
+          "Content": "Enjoy preferential and convenient day-to-day banking services."
+        },
+        {
+          "Title": "HSBC VISA Platinum Select Credit Card",
+          "Content": "No annual fees and enjoy offers discounts on entertainment, shopping, dining and much more."
+        },
+        {
+          "Title": "24/7 Banking",
+          "Content": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Title": "Multiple currencies",
+          "Content": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/current-accounts/basic-account",
+      "cardOptionDetails": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ",
+      "FeesAndCharges": "",
+      "AddCard": "*,4",
+      "RelatedCard": "5,7"
+    },
+    {
+      "ID": "7",
+      "Title": "eSaver Account",
+      "Categories": "Accounts",
+      "MonthlySalary": "12000",
+      "MinimumAvgBalance": "0",
+      "MinimumAgePrimary": "21",
+      "MinimumAgeSupplementary": "18",
+      "MinimumAnnualIncome": "36000",
+      "InterestRate": "2.5",
+      "InterestedIn": "",
+      "Summary": "eSaver Account: An HSBC Savings Account is the secure and flexible way to save for the things that are important to you. Not only do you earn interest, but you also have immediate access to your money.",
+      "ImageUrl": "https://cgblogassets.s3-ap-northeast-1.amazonaws.com/wp-content/uploads/sites/2/2016/01/27114542/hsbc-visa-infinite-singapore-card.png",
+      "CircleTitleOne": "Banking Benefits",
+      "CircleTitleOneDescription": "Up to 2 free cash withdrawals and 1 free balance inquiry on non-HSBC Switch ATMs per month",
+      "CircleTitleTwo": "24/7 Banking ",
+      "CircleTitleTwoDescription": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts",
+      "KeyFeatures": [
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        },
+        {
+          "Feature": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Feature": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        },
+        {
+          "Feature": "Free HSBC VISA Platinum Select Credit Card"
+        },
+        {
+          "Feature": "Up to 2 free cash withdrawals on non-HSBC Switch ATMs per month"
+        }
+      ],
+      "Benefits": [
+        {
+          "Title": "Fees And Charges",
+          "Content": "A dedicated Relationship Manager creates a financial strategy designed just for you."
+        },
+        {
+          "Title": "Banking Benefits",
+          "Content": "Enjoy preferential and convenient day-to-day banking services."
+        },
+        {
+          "Title": "HSBC VISA Platinum Select Credit Card",
+          "Content": "No annual fees and enjoy offers discounts on entertainment, shopping, dining and much more."
+        },
+        {
+          "Title": "24/7 Banking",
+          "Content": "Free Online Banking, Phone Banking, Mobile Banking and SMS alerts"
+        },
+        {
+          "Title": "Multiple currencies",
+          "Content": "Choice between AED, USD, GBP and Chinese Renminbi account currencies"
+        }
+      ],
+      "WebsiteURL": "http://www.hsbc.ae/1/2/personal/banking/current-accounts/basic-account",
+      "cardOptionDetails": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution ",
+      "FeesAndCharges": "",
+      "AddCard": "",
+      "RelatedCard": ""
+    }
+  ]
+}
